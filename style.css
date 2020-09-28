@@ -1,0 +1,286 @@
+/* start google css */
+:root{
+    --primary-font:'Quicksand', sans-serif;
+    --secondary-font: 'Dancing Script', cursive;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--primary-font);
+}
+.part{
+    margin: auto;
+}
+section{
+    margin-top: 4rem;
+}
+footer{
+    margin-top: 4rem;
+}
+/* end global css */
+
+/* start cover section */
+.cover{
+    padding-top: 3rem;
+    margin-top: 100px;
+    background-image:linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)), url(./img/cover/coffee-shop_best-location-for-coffee-shop-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+.cover .row .part img{
+    width: 60px;
+}
+.cover .row .part{
+    background-color: white;
+    color: black;
+    padding: 30px;
+    margin-top: 12px;
+}
+/* end cover section */
+
+/* start decoration section */
+.decoration{
+    margin-top: 5rem;
+}
+.decoration h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.decoration .row .part img{
+    width: 476px;
+}
+.decoration .row .part{
+    margin-top: 1rem;
+}
+/* end decoration section */
+
+/* start decscription section */
+.description{
+    background-image: linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.6)), url(./img/cover/KatesCafe.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-clip: border-box;
+    color: white;
+    padding: 8rem 0;
+}
+.description a{
+    text-decoration: none;
+}
+.description .number{
+    font-weight: 2000;
+    color: gray;
+}
+.description .number .name{
+    color: white;
+    margin: auto;
+    transform: translate(0px,-40px);
+    font-weight: 800;
+
+}
+/* End decscription section */
+
+/* start team section */
+.team .part img{
+   width: 200px;
+   height: 250px;
+   opacity: 1;
+   transition: opacity 0.5s;
+}
+.team .part .part{
+    color: gray;
+}
+.team h2{
+    text-align: center;
+}
+
+.team .overlay .icon-team{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s;
+    margin: auto;
+}
+.team .overlay .icon-team i{
+    padding: 0.7rem;
+    margin: auto;
+    margin-right: 0.4rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    transition: background 0.5s;
+}
+.team .part:hover img{
+    opacity: 0.5;
+}
+.team .part:hover .icon-team{
+    opacity: 1;
+}
+.team .part .overlay .icon-team .fb:hover{
+    background-color: blue;
+}
+.team .part .overlay .icon-team .tw:hover{
+    background-color: dodgerblue;
+}
+.team .part .overlay .icon-team .insta:hover{
+    background-color: rgb(207, 187, 3);
+}
+/* End team section */
+
+/* start coffee section */
+.coffee{
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(rgb(0,0,0,0.3),rgb(0,0,0,0.3)), url(./img/cover/2488.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+    margin: auto;
+}
+.coffee .text{
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+/* end coffee section */
+
+/* start philosophy section */
+.philosophy .part img{
+    width: 250px;
+}
+.philosophy .part .overlay1 .text2{
+    position: absolute;
+    top: 7%;
+    left: 10%;
+    background-color: rgb(199, 45, 45);
+    color: white;
+    border-radius: 20px;
+    padding: 0.4rem;
+    padding-bottom: 0rem;
+    margin: auto;
+    transform: translate(0%,10%);
+}
+.philosophy h3{
+    font-weight: 900;
+}
+.philosophy h2{
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+.philosophy .part{
+    margin-top: 2rem;
+}
+/* end philosophy section */
+
+/* start slide1 section */
+.slide1{
+}
+/* end slide1 section */
+
+/* start footer */
+footer{
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+footer .icon i{
+    padding: 0.6rem;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 50%;
+    margin: auto;
+    margin-left: 1rem;
+    margin-bottom: 0.6rem;
+}
+footer .icon{
+    margin-bottom: 4rem;
+}
+footer .icon i{
+    opacity: 0.6;
+    transition: opacity 0.5s;
+}
+footer .icon i:hover{
+   opacity: 1;
+}
+footer .part p{
+    font-size: 12px;
+    margin: 0px;
+}
+footer .part span{
+    margin-left: 1rem;
+}
+footer .part h5{
+    font-size: 16px;
+}
+footer .part form{
+    padding: 1rem;
+}
+footer .part form input{
+    padding: 0.2rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid tomato;
+    font-size: 14px;
+}
+footer .part form textarea{
+    padding: 0.2rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid tomato;
+    font-size: 14px;
+}
+/* end footer */
+
+/* start responsive part  */
+@media(max-width:991px){
+    .part{
+        margin: auto;
+        text-align: center;
+    }
+    .team .overlay .icon-team{
+        position: absolute;
+        left: 50%;
+    }
+}
+@media(max-width:767px){
+    .philosophy .part .overlay1 .text2{
+        position: absolute;
+        left: 27%;
+        margin: auto;
+    }
+}
+@media(max-width:573px){
+    .decoration .row .part img{
+        width: 300px;
+    }
+}
+@media(max-width:439px){
+    .coffee .text{
+        margin: auto;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,0%);
+    }
+}
+@media(max-width:327px){
+    .decoration .row .part img{
+        width: 200px;
+    }
+}
+@media(max-width:281px){
+    .philosophy .part img{
+        width: 190px;
+    }
+}
+/* end responsive part  */
+
+
